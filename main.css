@@ -1,0 +1,169 @@
+*{
+    margin:0;
+    padding: 0;
+}
+html{
+    font-size: 100px;
+
+}
+ul{
+    list-style: none;
+}
+#content{
+    margin:0 auto;
+    width:8.8rem;
+    height:100%;
+}
+
+#head{
+    background-image:url('33.png');
+    background-position: -0.5rem 0;
+    wdith:100%;
+    height:3.8rem;
+}
+
+#head h1{
+    font-size: 0.5rem;
+    text-align: center;
+    color:white;
+    padding-top:0.3rem;
+    letter-spacing: 0.08rem;
+}
+
+#resume{
+    font-size:1.1rem;
+    text-align: center;
+    color:rgb(201,205,214);
+    font-weight:800;
+}
+
+#web{
+    margin-top:0.3rem;
+    padding:0.05rem 0;
+    text-align: center;
+    font-size: 0.22rem;
+    color:rgb(201,205,214);
+    border-top:1px solid rgb(201,205,214);
+    border-bottom:1px solid rgb(201,205,214);
+    letter-spacing: 0.05rem;
+}
+
+#info{
+    width:100%;
+    height:8rem;
+}
+
+#my_info{
+    width:100%;
+    height:2.6rem;
+    background-color: #1e243a;
+}
+
+#my_info li{
+    display: inline-block;
+    width:33%;
+    height:2.6rem;
+    text-align: center;
+    color:white;
+    font-size: 0.16rem;
+    vertical-align:top;
+}
+#my_info h3{
+    padding-top:0.4rem;
+    color:#2bfcd4;
+    font-size:0.2rem;
+}
+#my_info p{
+    padding-top: 0.3rem;
+    line-height: 0.4rem;
+}
+
+#experience{
+    position: relative;
+    box-sizing: border-box;
+    height:5.4rem;
+    width:100%;
+    background-color:#1a2334;
+    padding:0.6rem;
+
+}
+
+#experience ul{
+    padding:0.5rem 0 0 0.5rem;
+    border-right: 0.02rem solid white;
+    height: 100%;
+    width:4.58rem;
+}
+
+#experience h3{
+    font-size: 0.25rem;
+    color:#2bfcd4;
+    padding-bottom: 0.4rem;
+}
+
+#experience li{
+    line-height: 0.4rem;
+    height:40%;
+    width:100%;
+    font-size: 0.15rem;
+    color:white;
+}
+
+
+
+#my_exp{
+    line-height: 0.6rem;
+    text-align: center;
+    width:1rem;
+    height:1.2rem;
+    border:2px solid #2bfcd4;
+    font-weight: bold;
+    font-size:0.4rem;
+    color:#2bfcd4;
+    position: absolute;
+    right:0.8rem;
+    top:1.2rem;
+}
+
+#year1{
+    text-align: center;
+    line-height: 0.25rem;
+    font-size:0.16rem;
+    font-weight: bold;
+    background-color: #1a2334;
+    color:#2bfcd4;
+    position: absolute;
+    width:0.5rem;
+    height:0.25rem;
+    left:5.45rem;
+    top:1.2rem;
+}
+
+#year2{
+    text-align: center;
+    line-height: 0.25rem;
+    font-size:0.16rem;
+    font-weight: bold;
+    background-color: #1a2334;
+    color:#2bfcd4;
+    position: absolute;
+    width:0.5rem;
+    height:0.25rem;
+    left:5.45rem;
+    top:2.8rem;
+}
+
+@media screen and (max-width:800px){
+    html{
+        font-size: 66px;
+    }
+}
+
+@media screen and (max-width:400px){
+    html{
+        font-size:33px;
+    }
+    #content{
+        width:100%;
+    }
+}
