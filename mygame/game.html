@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>game</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+
+        }
+        #box{
+            border:2px solid #999;
+            margin:0 auto;
+            border-collapse: collapse;
+            position: relative;
+        }
+        #box td{
+            width:40px;
+            height:40px;
+            position: relative;
+            background-image: url('./img3.jpg');
+        }
+        .td_ele{
+            position:relative;
+            background-image:none !important;
+        }
+        .lef_img{
+
+            background-image: url('./img2.png') !important;
+        }
+        .rig_img{
+            background-image: url('./img1.png')!important;
+        }
+        .fire_img{
+            background-image: url('./fire.png')!important;
+        }
+        .gold_img{
+            background-image: url('./gold.png')!important;
+        }
+        .heart_img{
+            background-image:url('./heart.png')!important;
+        }
+        .lef_gif{
+            background-color: red!important;
+            background-image: url('./left.gif')!important;
+        }
+        .rig_gif{
+            background-image: url('./right.gif')!important;
+        }
+        #first_line td{
+            background-image: none;
+        }
+        #left_content{
+            width:200px;
+            position: absolute;
+            top:30px;
+            left:20px;
+            line-height: 30px;
+        }
+        #left_content p{
+            font-size:14px;
+            color:#999;
+        }
+
+        #right_content{
+            width:200px;
+            position:absolute;
+            right:20px;
+            top:30px;
+        }
+
+        #right_content div{
+            font-size: 16px;
+            color:#999;
+            margin-top:30px;
+        }
+
+        #life_bar {
+            height:20px;
+            background-color:#ff0000;
+            width:200px;
+        }
+        #start{
+            width:80px;
+            height:30px;
+            background-color:#009fab;
+            color:#eee;
+            border:none;
+            border-radius:5px;
+            margin-right:10px;
+            cursor:pointer;
+        }
+        #restart{
+            width:80px;
+            height:30px;
+            background-color:#ab4b52;
+            color:#eee;
+            border:none;
+            border-radius:5px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <table id="box">
+    <tr id='first_line'>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td id='person' class='rig_img'></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    </table>
+    <div id='left_content'>
+        <button id='start'>游戏开始</button><button id='restart'>重新开始</button>
+        <h3>游戏说明：</h3>
+        <p>
+            左移动：←<br>
+            右移动：→<br>
+            向下挖掘：↓<br>
+            向前挖掘：空格<br>
+            火焰：随机出现，出现1秒后开始移动，碰到后会扣生命值。还会烧毁物品。<br>
+            红心：增加生命值。<br>
+            任务：收集金块，达到指定分数则游戏过关，生命值为0则游戏失败。
+        </p>
+    </div>
+
+    <div id='right_content'>
+        <h3>任务目标：800分</h3>
+        <div><span>分数</span><span id='score'></span></div>
+        <div id="life"><span>生命值</span><span id='life_num'></span></div>
+        <div id="life_bar"></div>
+    </div>
+
+    <script src='./main.js' type="text/javascript"></script>
+</body>
+</html>
