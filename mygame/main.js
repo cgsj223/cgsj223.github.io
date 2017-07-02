@@ -1,5 +1,19 @@
 
+
 //界面初始化开始
+let imgs=[
+  './img1.png',
+  './img2.png',
+  './left.gif',
+  './right.gif'
+]
+function preloadImgs(imgs){
+  for (var i=0;i<imgs.length;i++){
+    var img=new Image()
+    img.src=imgs[i]
+  }
+}
+preloadImgs(imgs);
 var box = document.getElementById('box');
 function setTable() {
     var tr_ele = '';
