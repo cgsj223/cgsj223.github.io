@@ -16,7 +16,7 @@
       height:304px;
       position: absolute;
       top:50%;
-      margin-top:-152px;
+      margin-top:-187px;
       left:50%;
       margin-left:-200px;
     }
@@ -35,14 +35,40 @@
     a:last-child{
       margin-bottom:0;
     }
+    #qr_code{
+      position: relative;
+      left:400px;
+      top:-200px;
+      display: none;
+    }
   </style>
+
 </head>
 <body>
   <div class="box">
     <a href="http://39.108.104.250">一个小网站（可注册、登录、评论）</a>
     <a href="./mygame/game.html">一个小游戏</a>
     <a href="https://github.com/cgsj223">github</a>
+    <a href="#" onclick="showimg()">微信测试号</a>
     <a href="./info.html">简历打印版</a>
+    <img id="qr_code" width=160px height=160px src="http://mmbiz.qpic.cn/mmbiz_jpg/fc67kMfJsWeqHPjl5BicZEPpRymzZRhkInOAxXue98IG9Wsd5Dt2JI1hNdCRYV3DzaP597kdiavpmvJDibDmaJ1kw/0" alt="二维码">
   </div>
+  <script>
+
+      var flag=false;
+      var wechat=document.getElementById("qr_code");
+      function showimg(){
+        flag=!flag;
+        if(flag){
+          wechat.style.display="block";
+        }else{
+          wechat.style.display="none";
+        }
+      }
+
+
+  </script>
+
+
 </body>
 </html>
